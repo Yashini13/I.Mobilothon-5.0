@@ -771,7 +771,7 @@ export default function LeftPanel() {
         )}
         <div className="flex-1">
           <div className="text-sm font-semibold">
-            {apiConnected ? "API Connected" : "API Disconnected"}
+            {apiConnected ? "API Connected" : "Connecting API...It may take few seconds. Please Wait :)"}
           </div>
           <div className="text-xs text-gray-400">{API_URL}</div>
         </div>
