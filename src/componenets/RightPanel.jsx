@@ -6,7 +6,7 @@ import {
   Music,
   Brain,
   Sun,
-  Droplets,
+  AirVent,
   Navigation,
   Coffee,
 } from "lucide-react";
@@ -21,10 +21,10 @@ export default function RightPanel() {
         </h3>
         <div className="grid grid-cols-2 gap-3">
           {[
-            { Icon: Heart, name: "Heart Sync Meditation", color: "pink" },
-            { Icon: Music, name: "Adaptive Neuro-Music", color: "purple" },
+            { Icon: Heart, name: "Calm Breathing Exercises", color: "pink" },
+            { Icon: Music, name: "Refreshing Neuro-Music", color: "purple" },
             { Icon: Activity, name: "Micro Movement Break", color: "green" },
-            { Icon: Droplets, name: "Scent Therapy Pulse", color: "cyan" },
+            { Icon: AirVent, name: "Cabin Air Refresh", color: "cyan" },
             { Icon: Sun, name: "Circadian Light Sync", color: "amber" },
             { Icon: Brain, name: "Focus Micro-Game", color: "indigo" },
           ].map(({ Icon, name, color }) => (
