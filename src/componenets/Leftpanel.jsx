@@ -298,7 +298,7 @@ export default function LeftPanel() {
   }, []);
 
   return (
-    <div className="flex flex-col gap-4 w-[32%]">
+    <div className="flex flex-col gap-4 w-[32%] h-screen overflow-y-auto">
       <div className={`rounded-lg p-3 border flex items-center gap-3 ${
         apiConnected 
           ? "bg-green-900/20 border-green-500/30" 
