@@ -31,7 +31,7 @@ export default function CenterPanel() {
   // 🎤 Automatically speak once monitoring starts
   useEffect(() => {
     const introMessage =
-      "Camera access granted. Monitoring driver wellness has started. Stay alert and drive safely.";
+      "Starting driver wellness monitoring powered by Aura. Stay alert and drive safely.";
     setMessage("Monitoring driver wellness...");
     const speakIntro = () => {
       if (voicesReady) playSpeech(introMessage);
