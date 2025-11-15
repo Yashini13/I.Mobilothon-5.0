@@ -299,7 +299,7 @@ export default function LeftPanel() {
 
   return (
     <div className="flex flex-col gap-4 w-[32%] h-screen overflow-y-auto">
-      <div className={`rounded-lg p-3 border flex items-center gap-3 ${
+      {/* <div className={`rounded-lg p-3 border flex items-center gap-3 ${
         apiConnected 
           ? "bg-green-900/20 border-green-500/30" 
           : "bg-red-900/20 border-red-500/30"
@@ -315,7 +315,30 @@ export default function LeftPanel() {
           </div>
           <div className="text-xs text-gray-400">{API_URL}</div>
         </div>
-      </div>
+      </div> */}
+
+      <div className={`rounded-lg p-3 border flex items-center gap-3 ${
+  apiConnected 
+    ? "bg-green-900/20 border-green-500/30" 
+    : "bg-red-900/20 border-red-500/30"
+}`}>
+  {apiConnected ? (
+    <Wifi className="w-5 h-5 text-green-400" />
+  ) : (
+    // 🔥 Tailwind Animated Spinner
+    <div className="w-5 h-5 border-2 border-red-400 border-t-transparent rounded-full animate-spin"></div>
+  )}
+
+  <div className="flex-1">
+    <div className="text-sm font-semibold">
+      {apiConnected
+        ? "API Connected"
+        : "API Connecting... It may take a few seconds. Please wait while we set things up 😊⏳"}
+    </div>
+    <div className="text-xs text-gray-400">{API_URL}</div>
+  </div>
+</div>
+
 
       {monitoring && assessment && (
         <div className={`rounded-2xl p-4 border-2 ${
