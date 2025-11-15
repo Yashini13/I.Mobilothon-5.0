@@ -333,7 +333,7 @@ export default function LeftPanel() {
     <div className="text-sm font-semibold">
       {apiConnected
         ? "API Connected"
-        : "API Connecting... It may take a few seconds. Please wait while we set things up 😊⏳"}
+        : "API Connecting... It may take a few moments. Please wait while we set things up 😊⏳"}
     </div>
     <div className="text-xs text-gray-400">{API_URL}</div>
   </div>
