@@ -320,13 +320,13 @@ export default function LeftPanel() {
       <div className={`rounded-lg p-3 border flex items-center gap-3 ${
   apiConnected 
     ? "bg-green-900/20 border-green-500/30" 
-    : "bg-red-900/20 border-red-500/30"
+    : "bg-blue-900/20 border-red-500/30"
 }`}>
   {apiConnected ? (
     <Wifi className="w-5 h-5 text-green-400" />
   ) : (
     // 🔥 Tailwind Animated Spinner
-    <div className="w-5 h-5 border-2 border-red-400 border-t-transparent rounded-full animate-spin"></div>
+    <div className="w-5 h-5 border-2 border-blue-200 border-t-transparent rounded-full animate-spin"></div>
   )}
 
   <div className="flex-1">
